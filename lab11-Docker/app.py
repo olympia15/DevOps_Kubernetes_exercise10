@@ -33,5 +33,9 @@ def metrics():
 def greet():
     return "Welcome to Minikube, kubernetes and argoCD examples"
 
+@app.route("/welcome")
+def greet():
+    return "Welcome to GBC COMP3104 DevOps course!"
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
